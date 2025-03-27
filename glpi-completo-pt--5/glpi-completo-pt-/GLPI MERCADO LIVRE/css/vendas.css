@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEB3B; /* Cor de fundo amarela */
+}
+
+/* Container principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white; /* Fundo branco para o menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    max-width: 200px;
+}
+
+/* Estilos para a seção de produtos */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+/* Cada item de produto */
+.product-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex: 1 1 30%; /* Cada item vai ocupar 30% do espaço */
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Imagens dos produtos - Tamanho reduzido */
+.product-item img {
+    width: 60px; /* Tamanho fixo para as imagens (ainda menor) */
+    height: 60px; /* Tamanho fixo */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
+    margin-right: 15px; /* Espaço entre a imagem e o conteúdo */
+}
+
+/* Detalhes dos produtos */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: left;
+    width: 100%; /* Ocupa o restante do espaço */
+}
+
+/* Títulos (h2) */
+.product-details h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botão e Preço alinhados lado a lado */
+.price-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%; /* O botão ocupará 48% do espaço */
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Preço */
+.price-and-button p {
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 48%; /* O preço ocupará 48% do espaço */
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
